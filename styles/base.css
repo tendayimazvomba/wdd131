@@ -6,7 +6,7 @@
     --surface-color: #ffffff;
     --text-color: #212529;
     --border-color: #d9dee5;
-    --max-width: 1100px;
+    --max-width: 1200px;
 
     --heading-font: "Merriweather", serif;
     --body-font: "Roboto", sans-serif;
@@ -47,7 +47,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: var(--secondary-color);
+    background: var(--primary-color);
 }
 
 nav a {
@@ -59,7 +59,7 @@ nav a {
     transition: 0.3s;
 }
 
-nav a:hoover {
+nav a:hover {
     background-color: var(--accent-color);
     color: black;
 }
@@ -72,6 +72,7 @@ main {
     display: grid;
     grid-template: auto / 2fr 1fr;
     gap: 1.5rem;
+    align-items: start;
 }
 
 main h1 {
@@ -98,14 +99,27 @@ main h1 {
     font-family: var(--heading-font);
 }
 
+.about-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
 .card h3 {
     text-align: center;
     margin-top: 1.5rem;
     color: var(--primary-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.country {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
 }
 
 .card p {
-    padding: 1rem;
+    padding: 1.25rem;
 }
 
 .card img:first-of-type {
@@ -127,11 +141,12 @@ main h1 {
 }
 
 .card li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
 }
 
 .card a {
     color: var(--primary-color);
+    font-size: 1rem;
 }
 
 .card a:hover {
@@ -150,7 +165,4 @@ footer p:first-child {
     margin-top: 0.5rem;
 }
 
-#lastModified {
-    color: var(--accent-color);
-    font-size: 0.9rem;
-}
+

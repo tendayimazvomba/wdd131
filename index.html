@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - Tendayi Gabriel Mazvomba</title>
     <meta name="description"
-        content="WDD 131 - Dynamic Web Fundamentals home page by Tendayi Gabriel Mazvomba featuring web development resources, an about me section, and information about Zimbabwe.">
+        content="WDD 131 - Dynamic Web Fundamentals home page by Tendayi Gabriel Mazvomba featuring an about me section and information about Zimbabwe.">
     <meta name="author" content="Tendayi Gabriel Mazvomba">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,84 +14,99 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 
 </head>
-<header>
-    <div class="header-title">
-        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
-    </div>
-
-    <nav>
-        <a href="https://www.linkedin.com/in/tendayi-gabriel-mazvomba-8aba01145/" target="_blank">LinkedIn</a>
-        <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/rom/1?lang=eng&id=p16-17#16-17"
-            target="_blank">Scripture</a>
-        <a href="final-project/">Final Project</a>
-    </nav>
-
-</header>
-<main>
-    <h1>Tendayi Gabriel Mazvomba</h1>
-
-    <section class="card">
-
-        <h2>About Me</h2>
-
-        <img src="images/profile.jpg" alt="Photo of Tendayi Gabriel Mazvomba">
-
-        <p>
-            I am Tendayi Gabriel Mazvomba, a banking and product management professional with a passion for technology,
-            innovation, and continuous learning. My experience includes developing customer-focused solutions, enhancing
-            products and services, and driving business growth through strategic thinking and problem-solving. I am
-            currently expanding mu skills in web development through BYU Pathway, where I enjoy building digital
-            solutions that address real-world challenges. I believe success is achieved through integrity, lifelong
-            learning, and creating meaningful value for people, organizations, and the communities they serve.
-        </p>
-
-        <h3>Bulawayo, Zimbabwe</h3>
-
-        <img src="images/flag-of-zimbabwe.jpg" alt="Official Flag of Zimbabwe">
-
-        <p>
-            Zimbabwe is a beautiful landlocked country in Southern Africa known for its stunning
-            natural landscapes, rich cultural heritage, and resilient people. It is home to
-            world-renowned attractions such as Victoria Falls and the historic Great Zimbabwe
-            ruins,
-            reflecting the nation's natural beauty and historical significance. Zimbabwe also
-            boasts
-            diverse wildlife, vibrant traditions, and major cities such as Harare and Bulawayo,
-            which contribute to commerce, education, and cultural development. With strong
-            foundations in agriculture, mining, tourism, and entrepreneurship, Zimbabwe
-            continues
-            to inspire pride, progress, and opportunity.
-        </p>
-
-    </section>
-
-    <section class="card">
-
-        <h2>Web Dev Resources</h2>
-
-        <ul>
-            <li><a href="https://developer.mozilla.org/">MDN Wed Docs</a></li>
-            <li><a href="https://www.w3schools.com/">W3Schools</a></li>
-            <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
-            <li><a href="https://codepen.io/">CodePen</a></li>
-            <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
-            <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
-        </ul>
-    </section>
-</main>
-
-<footer>
-    <p>
-        &copy; <span id="currentyear"></span> | Tendayi Gabriel Mazvomba | Zimbabwe
-    </p>
-
-    <p id="lastModified"></p>
-</footer>
 
 <body>
+
+    <header>
+        <div class="header-title">
+            <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        </div>
+
+        <nav>
+            <a href="https://www.linkedin.com/in/tendayi-gabriel-mazvomba-8aba01145/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/rom/1?lang=eng&id=p16-17#16-17"
+                target="_blank">Scripture</a>
+            <a href="final-project/">Final Project</a>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Tendayi Gabriel Mazvomba</h1>
+
+        <section class="card">
+
+            <h2>About Me</h2>
+
+            <div class="about-content">
+
+                <p>
+                    I am Tendayi Gabriel Mazvomba, a banking and product management professional with a passion for
+                    technology,
+                    innovation, and continuous learning. My experience includes developing customer-focused solutions,
+                    enhancing
+                    products and services, and driving business growth through strategic thinking and problem-solving. I
+                    am
+                    currently expanding mu skills in web development through BYU Pathway, where I enjoy building digital
+                    solutions that address real-world challenges. I believe success is achieved through integrity,
+                    lifelong
+                    learning, and creating meaningful value for people, organizations, and the communities they serve.
+                </p>
+
+                <img src="images/profile.jpg" alt="Photo of Tendayi Gabriel Mazvomba">
+
+            </div>
+
+            <h3>Bulawayo, Zimbabwe</h3>
+
+            <div class="country">
+                <img src="images/flag-of-zimbabwe.jpg" alt="Official Flag of Zimbabwe">
+
+                <p>
+                    Zimbabwe is a beautiful landlocked country in Southern Africa known for its stunning
+                    natural landscapes, rich cultural heritage, and resilient people. It is home to
+                    world-renowned attractions such as Victoria Falls and the historic Great Zimbabwe
+                    ruins,
+                    reflecting the nation's natural beauty and historical significance. Zimbabwe also
+                    boasts
+                    diverse wildlife, vibrant traditions, and major cities such as Harare and Bulawayo,
+                    which contribute to commerce, education, and cultural development. With strong
+                    foundations in agriculture, mining, tourism, and entrepreneurship, Zimbabwe
+                    continues
+                    to inspire pride, progress, and opportunity.
+                </p>
+
+            </div>
+
+
+
+        </section>
+
+        <section class="card">
+
+            <h2>Web Dev Resources</h2>
+
+            <ul>
+                <li><a href="https://developer.mozilla.org/">MDN Wed Docs</a></li>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+                <li><a href="https://codepen.io/">CodePen</a></li>
+                <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+                <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Tendayi Gabriel Mazvomba | Zimbabwe
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
 
