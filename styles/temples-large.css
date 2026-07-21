@@ -1,0 +1,26 @@
+@media screen and (min-width: 640px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        flex-wrap: nowrap;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: auto;
+        margin-top: 0;
+    }
+
+    .navigation a {
+        padding: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
