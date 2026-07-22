@@ -42,9 +42,13 @@ header {
     cursor: pointer;
 }
 
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
 .navigation {
     display: none;
-    flex-direction: column;
     width: 100%;
     margin-top: 1rem;
 }
