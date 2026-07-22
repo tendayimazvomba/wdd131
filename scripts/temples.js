@@ -12,7 +12,7 @@ menuButton.addEventListener("click", () => {
 });
 
 const currentYear = new Date().getFullYear();
-document.querySelector("#year").textContent = currentYear;
+document.querySelector("#currentyear").textContent = currentYear;
 
-document.querySelector("#lastModified").textContent = 'Last Modified: ${document.lastModified}';
+document.querySelector("#lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
