@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
