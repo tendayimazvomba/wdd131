@@ -23,31 +23,59 @@
 </header>
 
 <main>
-    <!--Hero Image-->
-    <picture class="hero">
-        <source srcset="images/matobo-national-park-large.webp" media="min-width:1000px">
-        <img src="images/matobo-hills-small.webp" alt="Granite rock formations at Matobo Hills National Park">
-    </picture>
 
-    <!--Data Card-->
-    <section class="data-card">
-        <h2>Data</h2>
+    <div class="hero">
+        <!--Hero Image-->
+        <picture>
+            <source media="(min-width:1000px)" srcset="images/matobo-large.webp">
+            <img src="images/matobo-small.webp" alt="Granite rock formations at Matobo Hills National Park">
+        </picture>
 
-        <div class="details">
-            <p><strong>Country:</strong>Zimbabwe</p>
-            <p><strong>Province:</strong>Matebeleland South</p>
-            <p><strong>Established:</strong>1926</p>
-            <p><strong>Area:</strong>424km2</p>
-            <p><strong>UNESCO Site:</strong>Yes(2003)</p>
-            <p><strong>Known For:</strong>Granite Kopjes, San Rock Art, Wildlife</p>
-        </div>
-    </section>
+        <!--Data Card-->
+        <section class="card data">
+            <h2>Data</h2>
 
-    <!--Weather Card-->
-    <section class="weather-card">
-        <h2>--Weather</h2>
-    </section>
+            <div class="details">
+                <p><strong>Country:</strong> Zimbabwe</p>
+                <p><strong>Province:</strong> Matebeleland South</p>
+                <p><strong>Established:</strong> 1926</p>
+                <p><strong>Area:</strong> 424 km²</p>
+                <p><strong>UNESCO Site:</strong> Yes (2003)</p>
+                <p><strong>Known For:</strong> Granite Kopjes, San Rock Art, Wildlife</p>
+            </div>
+        </section>
+
+        <!--Weather Card-->
+        <section class="card weather">
+            <h2>Weather</h2>
+
+            <img src="images/weather.svg" alt="Sunny weather" class="weather-icon">
+
+            <div class="details">
+                <p><strong>Temperature:</strong>
+                    <span id="temperature"> 8</span>°C
+                </p>
+                <p><strong>Conditions:</strong> Sunny</p>
+                <p><strong>Wind:</strong>
+                    <span id="windspeed">10</span> km/h
+                </p>
+                <p><strong>Wind Chill:</strong>
+                    <span id="windchill"></span>
+                </p>
+            </div>
+        </section>
+    </div>
+
 </main>
+
+<footer>
+    <p>&copy; <span id="year"></span> Tendayi Gabriel Mazvomba | Zimbabwe</p>
+
+    <p>
+        Last Modified:
+        <span id="lastModified"></span>
+    </p>
+</footer>
 
 <body>
 
