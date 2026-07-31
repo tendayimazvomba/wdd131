@@ -31,6 +31,7 @@
     .data {
         top: 80px;
         left: 30px;
+        width: 280px;
     }
 
     .weather {
@@ -54,6 +55,7 @@
 
     .weather .details {
         margin-top: 1rem;
+        text-align: center;
     }
 
     footer {
