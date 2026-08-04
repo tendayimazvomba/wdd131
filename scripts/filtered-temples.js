@@ -75,6 +75,14 @@ const temples = [
     imageUrl:
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
+    {
+    templeName: "Harare Zimbabwe Temple",
+    location: "Harare, Zimbabwe",
+    dedicated: "2026, March, 1",
+    area: 17247,
+    imageUrl:
+    ""
+  },
   // Add more temple objects here...
 ];
 
