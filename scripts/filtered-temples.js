@@ -81,7 +81,7 @@ const temples = [
     dedicated: "1985, August, 24",
     area: 19184,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/johannesburg-south-africa/400x250/johannesburg-south-africa-temple-lds-83166-wallpaper.jpg"
+      "https://churchofjesuschristtemples.org/assets/img/temples/johannesburg-south-africa-temple/johannesburg-south-africa-temple-22475-main.jpg"
   },
   {
     templeName: "Portland Oregon",
@@ -89,7 +89,7 @@ const temples = [
     dedicated: "1989, August, 19",
     area: 80500,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/portland-oregon/400x250/portland-temple-lds-1079118-wallpaper.jpg"
+      "https://churchofjesuschristtemples.org/assets/img/temples/portland-oregon-temple/portland-oregon-temple-1629-main.jpg"
   },
   {
     templeName: "London England",
@@ -97,7 +97,7 @@ const temples = [
     dedicated: "1958, September, 7",
     area: 42652,
     imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/london-england/400x250/london-england-temple-lds-850483-wallpaper.jpg"
+      "https://churchofjesuschristtemples.org/assets/img/temples/london-england-temple/london-england-temple-56886-main.jpg"
   }
 
 ];
@@ -135,4 +135,55 @@ function createTempleCard(temple) {
   document.querySelector(".gallery").appendChild(card);
 }
 
-function displa
+function displayTemples(temples) {
+  const gallery = document.querySelector(".gallery");
+  gallery.innerHTML = "";
+  temples.forEach(createTempleCard);
+}
+
+displayTemples(temples);
+
+document.querySelector("#home").addEventListener("click", () => {
+  displayTemples(temples);
+});
+
+document.querySelector("#old").addEventListener("click", () => {
+
+  const oldTemples = temples.filter(temple =>
+    Number(temple.dedicated.slice(0, 4)) < 1900
+  );
+
+  displayTemples(oldTemples);
+
+});
+
+document.querySelector("#new").addEventListener("click", () => {
+
+  const newTemples = temples.filter(temple =>
+    Number(temple.dedicated.slice(0, 4)) > 2000
+  );
+
+  displayTemples(newTemples);
+
+});
+
+document.querySelector("#large").addEventListener("click", () => {
+
+  const largeTemples = temples.filter(temple =>
+    temple.area > 90000
+  );
+
+  displayTemples(largeTemples);
+
+});
+
+document.querySelector("#small").addEventListener("click", () => {
+
+  const smallTemples = temples.filter(temple =>
+    temple.area < 10000
+  );
+
+  displayTemples(smallTemples);
+
+});
+

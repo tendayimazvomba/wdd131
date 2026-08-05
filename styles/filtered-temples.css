@@ -70,7 +70,7 @@ nav {
 }
 
 main {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 1rem;
 }
@@ -115,4 +115,8 @@ footer {
 
 footer p:first-child {
     margin-top: 0.5rem;
+}
+
+section {
+    text-align: center;
 }
