@@ -134,3 +134,5 @@ function createTempleCard(temple) {
 
   document.querySelector(".gallery").appendChild(card);
 }
+
+function displa
