@@ -102,3 +102,35 @@ const temples = [
 
 ];
 
+function createTempleCard(temple) {
+
+  const card = document.createElement("section");
+
+  const name = document.createElement("h3");
+  const location = document.createElement("p");
+  const dedicated = document.createElement("p");
+  const area = document.createElement("p");
+  const image = document.createElement("img");
+
+  name.textContent = temple.templeName;
+
+  location.innerHTML = `<strong>Location:</strong> ${temple.location}`;
+
+  dedicated.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
+
+  area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
+
+  image.setAttribute("src", temple.imageUrl);
+  image.setAttribute("alt", temple.templeName);
+  image.setAttribute("loading", "lazy");
+  image.setAttribute("width", "400");
+  image.setAttribute("height", "250");
+
+  card.appendChild(name);
+  card.appendChild(location);
+  card.appendChild(dedicated);
+  card.appendChild(area);
+  card.appendChild(image);
+
+  document.querySelector(".gallery").appendChild(card);
+}
